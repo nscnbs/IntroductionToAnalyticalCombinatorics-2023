@@ -1,0 +1,39 @@
+Zadanie 66:
+Niech fix(n) oznacza średnią liczbę punktów stałych permutacji zbioru [n].
+1. Korzystając z algorytmu Fishera-Yates’a zbadaj eksperymentalnie liczby fix(n) dla n <= 100.
+2. Postaraj się o postawienie rozsądnej hipotezy na temat liczb fix(n).
+3. Udowodnij postawioną hipotezę.
+
+1. Algorytm Fishera-Yates’a jest używany do permutacji zbioru [n]. Podstawową ideą algorytmu jest iteracyjne przemieszczanie elementów tablicy, co prowadzi do uzyskania permutacji.
+
+Uwagi:
+Malejąca tendencja:
+Dla większości wartości n, obserwowane wartości średniej fix(n) są bliskie 1. Oznacza to, że przeważająca liczba permutacji ma tylko jeden punkt stały.
+
+Nieregularności dla pewnych n:
+W niektórych przypadkach, zwłaszcza dla pewnych n, obserwuje się pewne skoki w wartościach. Przykładowo, dla n=6 średia fix(n) wynosi 0.950, co jest niższe niż sąsiednie wartości. To może sugerować, że dla n=6 istnieje więcej permutacji z większą liczbą punktów stałych.
+
+Wzrost wartości dla pewnych n:
+Wraz ze wzrostem n, wartości średnia fix(n) wydają się rosnąć, co sugeruje, że większość permutacji zbioru [n] ma tendencję do posiadania więcej punktów stałych.
+
+
+2. Bazując na obserwacjach, można sformułować hipotezę, że dla większości n, średnia fix(n) jest bliska 1, co oznacza, że większość permutacji zbioru [n] ma tylko jeden punkt stały. Jednakże, dla pewnych n, istnieją nieregularności, które powodują skoki w wartościach, wskazując na bardziej złożone przypadki permutacji.
+
+
+3.
+Jeden punkt stały:
+Fakty:
+	Wszystkie permutacje można rozłożyć na cykle.
+	Cykl długości k ma k punktów stałych.
+	Im większa permutacja, tym więcej cykli.
+	Algorytm Fishera-Yates’a generuje permutacje w sposób równomierny.
+    	Przemieszczanie elementów w algorytmie jest losowe, co oznacza, że każdy element ma równy szansę stać się punktem stałym.
+    	Skoro każdy element może być punktem stałym z jednakowym prawdopodobieństwem, to permutacje generowane przez ten algorytm będą miały tendencję do posiadania tylko jednego punktu stałego.
+    
+W przypadku dużej permutacji, większość jej elementów uczestniczy w cyklach, co oznacza, że permutacja ma tendencję do posiadania tylko jednego punktu stałego.
+
+Nieregularność:
+	Przykładowo, dla n = 6 wartość średnia fix(n) wynosi 0.95, co jest niższe niż sąsiednie wartości.
+Dla pewnych n, pewne konfiguracje permutacji mogą powodować, że więcej niż jeden element staje się punktem stałym, co wpływa na wartość średnią.
+	Przykładowo, dla n = 11 możemy mieć permutacje, w których część elementów tworzy cykle o różnych długościach, co wpływa na liczbę punktów stałych.
+	Przyglądając się tendencjom dla dużych n, można zauważyć, że nieregularności mogą wynikać z bardziej złożonych konfiguracji permutacji dla pewnych n.

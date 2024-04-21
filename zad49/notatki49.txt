@@ -1,0 +1,22 @@
+Zadanie 49
+Niech P(x) = ∏ (od k=1 do ∞) 1/(1-z^n). Róźniczkując obie strony wyrażenia ln*P(x) = Σ (od k=1 do ∞) ln*1/(1-z^n) pokaż, że x* P'(x)/P(x) = Σ (od k=1 do ∞) z^n/(1-z^n). Niech p(n) = [x^n]P(x). Wywnioskuj z powyższego równania, że n*p(n) = Σ (od j=1 do n) σ(n)*p(n−j), gdzie σ(n) jest równa sumie dzielników liczby n (np. σ(5) = 1 + 6 = 6, zaś σ(6) = 1 + 2 + 3 + 6 = 12).
+1. Korzystając z powyższej równości napisz program wyznaczający liczby p(n) i oblicz p(n) dla n = 1, ...., 100.
+2. Jaka jest złożoność obliczeniowa napisanej procedury?  
+
+Różniczkujemy obie strony wyrażenia ln⁡*P(x) = ∑ (od k=1 do ∞) ln*(⁡1/1−z^n)​. 
+
+Różniczkując obie strony po x, otrzymujemy:
+P′(x)/P(x) = ∑ (od k=1 do ∞) z^n/(1−z^n)​
+
+n*p(n):
+Niech p(n)=[x^n]P(x), czyli współczynnik przy x^n w rozwinięciu P(x) w szereg potęgowy. 
+Wartość n*p(n) jest równa:
+
+n*p(n)=∑(od j=1 do n) σ(n)*p(n−j)
+
+gdzie σ(n) to suma dzielników liczby n.
+
+
+2.  Złożoność obliczeniowa p(n) wynosi O(n^2) ze względu na pętlę wewnętrzną.
+    Funkcja sigma(n) ma złożoność O(n) ze względu na sumowanie dzielników liczby n.
+    Ogólna złożoność obliczeniowa programu wynosi O(n^2).

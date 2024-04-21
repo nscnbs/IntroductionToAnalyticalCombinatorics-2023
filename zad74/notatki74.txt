@@ -1,0 +1,6 @@
+Zadanie 74:
+Narysuj, za pomocą dowolnego narzędzia, wykresy powierzchni w R3 zadanych
+następującymi równaniami:
+1.Sr = {(ℜ(re^(ıt)), ℑ(re^(ıt)), ℜ(√r exp(ıt/2)) : r ∈ [0, 1], t ∈ [0, 4π]}
+2.Sc = {(ℜ(re^(ıt)), ℑ(re^(ıt)), ℑ(√r exp(ıt/2)) : r ∈ [0, 1], t ∈ [0, 4π]}
+3.L = {(ℜ(re^(ıt)), ℑ(re^(ıt)), | ln(r) + ıt|) : r ∈ [0.1, 10], t ∈ [0, 8π]}

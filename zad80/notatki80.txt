@@ -1,0 +1,8 @@
+Wygeneruj wykresy funkcji g(z) = |f(z)|, gdzie
+1.f(z) = |z|
+2.f(z) = |z^2|
+3.f(z) = 1/2−ez
+4.f(z) = 1/((1−z)(1−z/2)(1−z/3))
+5.f(z) = (1+z+z^2)/(1−z−z^2−z^3)
+6.f(z) = e^−z/2−e^z
+7.f(z) = √(1 − 4z)

@@ -1,0 +1,15 @@
+Zadanie 32:
+Napisz procedurę, która dla danej funkcji f : N → R takiej, że f (0) ! = 0
+oraz danego n zwraca n pierwszych elementów formalnej odwrotności szeregu formalnego ∑ (od n >= 0) f(n)*x^n.
+Zastosuj ją do wyznaczania 10 pierwszych elementów formalnej odwrotności dla następujących funkcji f :
+1. f(n) = 1
+2. f(n) = 2^n
+3. f(n) = n!
+4. f(n) = 1/n!
+
+b_n​ = − 1/a(0) ​​∑(k=0 n−1) ​a_(n−k)​*b_k
+
+1. Funkcja f(n) = 1 jest stała, a jej odwrotność również jest stała, wynosząca 1. Dlatego elementy formalnej odwrotności poza pierwszym są bliskie zeru.
+2. Funkcja f(n) = 2^n generuje ciąg liczb parzystych, a formalna odwrotność tego szeregu ma nieregularne wartości, ale w większości przypadków są one bliskie zeru.
+3. Funkcja f(n) = n! generuje szybko rosnące wartości, co powoduje, że elementy formalnej odwrotności maleją, ale są one znacznie większe niż w poprzednich przypadkach.
+4. Funkcja f(n) = 1/n! generuje szybko malejące wartości, a formalna odwrotność ma wartości, które coraz bardziej zbliżają się do zera.
